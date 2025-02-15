@@ -51,6 +51,7 @@ function newCar(car = {}) {
     carCopy.otv = car.price < 1450000 ? 10 : 40;
     carCopy.mtv = car.age <= 10 && car.age >= 1 ? 1773 : 520;
     carCopy.isDomestic = carCopy.brand === 'TOGG' ? true : false;
+    //carCopy.isDomestic = carCopy.brand === 'TOGG';
     carCopy = {
         id: car.id, 
         marka: carCopy.brand,
